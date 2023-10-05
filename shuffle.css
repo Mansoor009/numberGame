@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Poppins', sans-serif;
 }
 html,body{
     width: 100%;
@@ -15,7 +15,7 @@ html,body{
  .diceNum{
     width: 20%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 60%;
     transform: translate(-50%,-50%);
     margin: 0 auto;
@@ -24,7 +24,7 @@ html,body{
  .diceNum2{
     width: 20%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 40%;
     transform: translate(-50%,-50%);
     margin: 0 auto;
@@ -39,26 +39,17 @@ html,body{
 .diceDisplay-wrapper img{
     width: 100%;
 }
-.playerBtns{
-    /* display: flex;
-    justify-content: center; */
-    margin-top: 40px;
-}
-.Btn{
+
+.p1Btn {
+    background-color: black;
     padding: 10px 20px;
     font-size: 17px;
     border-radius: 10px;
     border: none;
     color: white;
     font-weight: 600;
-    margin-left: 20px;
     cursor: pointer;
-}
-.p1Btn{
-    background-color: black;
-}
-.player_points{
-    margin-top: 40px;
+    margin: 25px 0;
 }
 .dice1 h2{
     background-color: red;
@@ -71,4 +62,52 @@ html,body{
     border-radius: 10px;
     display: inline-block;
     padding:8px 16px;
+}
+@media screen and (max-width:799px) {
+    .dice1 h2{
+        background-color: red;
+        border-radius: 10px;
+        display: block;
+        margin-left: 10px;
+    }
+    .dice2 h2{
+        background-color: green;
+        border-radius: 10px;
+        display: block;
+        margin-right: 10px;
+    }
+    .diceDisplay-wrapper h2{
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: white;
+        
+    }
+}
+@media screen and (max-width:500px) {
+    .diceDisplay-wrapper h2{
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: white;
+        
+    }
+    .diceNum{
+        width: 20%;
+        position: absolute;
+        top: 35%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        margin: 0 auto;
+        /* display: none; */
+    }
+     .diceNum2{
+        width: 20%;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        margin: 0 auto;
+        /* display: none; */
+    }
 }
