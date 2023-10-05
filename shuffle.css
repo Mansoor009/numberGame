@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 html,body{
     width: 100%;
@@ -29,6 +30,12 @@ html,body{
     margin: 0 auto;
     /* display: none; */
 }
+.diceDisplay-wrapper h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: white;
+}
 .diceDisplay-wrapper img{
     width: 100%;
 }
@@ -48,11 +55,20 @@ html,body{
     cursor: pointer;
 }
 .p1Btn{
-    background-color: red;
-}
-.p2Btn{
-    background-color: green;
+    background-color: black;
 }
 .player_points{
     margin-top: 40px;
+}
+.dice1 h2{
+    background-color: red;
+    border-radius: 10px;
+    display: inline-block;
+    padding:8px 16px;
+}
+.dice2 h2{
+    background-color: green;
+    border-radius: 10px;
+    display: inline-block;
+    padding:8px 16px;
 }
