@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="diceGame.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <section class="die">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- <div class="player_score">
+                        <div class="p1Score">
+                            <h3>Player 1 - <b class="fPoints1"></b></h3>
+                        </div>
+                        <div class="p2Score">
+                            <h3>Player 2 - <b class="fPoints1"></b></h3>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="playerBtns">
+                        <button class="p1Btn Btn" onclick="diceScore()" data-bs-toggle="modal" data-bs-target="#exampleModal">Shuffle It Up</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 class="result"></h2>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                 <div class="dice-grp">
+                    <div class="diceDisplay-wrapper">
+                        
+                        <div class="dice1 diceNum text-center">
+                            <h2>Player 2</h2>
+                            <img src="" id="img1" class="1">
+                        </div>
+                    </div>
+                    <div class="diceDisplay-wrapper">
+                        
+                        <div class="dice2 diceNum2 text-center">
+                            <h2>Player 1</h2>
+                            <img src="" id="img2" class="1">
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="diceGame.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
