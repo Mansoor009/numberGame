@@ -1,12 +1,6 @@
 
-// const displayNum = document.querySelectorAll(".diceNum")
-
-
-// let W = 0;
-// let L = 0;
 let mPoint1 = document.querySelector(".mPoint1")
 let mPoint2 = document.querySelector(".mPoint2")
-
 let diceScore = () => {
     let imgs = ["one.png", "two.png", "three.png", "number-4.png", "five.png", "six.png"];
     let result = document.querySelector(".result");
@@ -29,4 +23,14 @@ let diceScore = () => {
     else {
         result.innerText = `Player 1 WON`;
     }
+    function timeOut(){
+        let modal = document.querySelector("#exampleModal");
+        modal.style.opacity = 0;
+        modal.style.scale = 0.2;
+        setTimeout(() => {
+            modal.style.scale = "1";
+            modal.style.opacity = "1";
+        }, 1100);
+    }
+    timeOut()
 }
